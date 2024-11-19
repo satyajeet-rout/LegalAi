@@ -7,7 +7,6 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Dashboard from './components/Dashboard'
 import Layout from './components/Layout'
 import ResearchChat from './components/ResearchChat'
-import DocChat from './components/DocChat'
 import ExtractChat from './components/ExtractChat'
 
 
@@ -24,7 +23,6 @@ const router = createBrowserRouter(
       <Route path='ExtractChat' element={<ExtractChat/>} />
       <Route path='ResearchChat' element={<ResearchChat/>} />
       <Route path='AutoDraftChat' element={<ResearchChat/>} />
-      <Route path='DocTalkChat' element={<DocChat/>} />
       {/* <Route path='sidebar' element={<Sidebar/>} /> */}
       {/* <Route path='chat' element={<ChatGPTInterface/>} /> */}
      
