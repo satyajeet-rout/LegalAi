@@ -43,7 +43,7 @@ const ResearchChat = () => {
       setShowSources(false);
 
       try {
-        const response = await fetch('/api/legal/research/', {
+        const response = await fetch('https://legal-ai-backend-draft-drh9bmergvh7a4a9.southeastasia-01.azurewebsites.net/legal/research/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

@@ -39,7 +39,7 @@ const ExtractChat = () => {
       setShowSources(false);
 
       try {
-        const response = await fetch('/api/legal/summarise/', {
+        const response = await fetch('https://legal-ai-backend-draft-drh9bmergvh7a4a9.southeastasia-01.azurewebsites.net/legal/summarise/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
