@@ -1,5 +1,5 @@
 import { 
-  Menu,
+  // Menu,
   ChevronRight,
   FileText,
   Search,
@@ -90,14 +90,21 @@ const Sidebar = () => {
         {/* Sidebar Header */}
         <div className="p-4 border-b">
           <div className="flex items-center justify-between">
-            {isSidebarExpanded && <h2 className="text-xl font-bold">Legal Tools</h2>}
+            {isSidebarExpanded && <img 
+                                src="https://www.infrahive.io/_next/image?url=%2Fimages%2Flogo%2Flogo.png&w=640&q=75"
+                               
+                                className=" w-[100px] mx-auto"
+                              />}
             <Button 
               variant="ghost" 
               size="icon"
               onClick={() => setIsSidebarExpanded(!isSidebarExpanded)}
               className="ml-auto"
             >
-              {isSidebarExpanded ? <ChevronRight /> : <Menu />}
+              {isSidebarExpanded ? <ChevronRight /> : <img 
+                                src="https://infrahive-ai-search.vercel.app/Logo%20(Digest).png"
+                                className=" w-[40px] mx-auto"
+                              />}
             </Button>
           </div>
         </div>
